@@ -22,7 +22,7 @@
           </h1>
           <ul class="site-navigation">
             <li>
-              <a class="menu-link .active-menu-link" href="#">Каталог</a>
+              <a class="menu-link active-menu-link" href="#">Каталог</a>
               <ul class="sub-menu">
                 <li><a class="sub-menu-link sub-first-link" href="#">Новинки</a></li>
                 <li><a class="sub-menu-link" href="#">Сливочное</a></li>
@@ -41,12 +41,45 @@
           <ul class="user-navigation">
             <li>
               <a class="search-link" href="#">Найти</a>
+              <form class="search-form form" name="search-form" action="#" method="get">
+                <input type="text" placeholder="Что ищем?">
+              </form>
             </li>
             <li>
               <a class="login-link" href="#">Вход</a>
+              <form class="login-form form" name="login-form" action="#" method="post" action="#">
+                <input type="text" placeholder="Электронная почта">
+                <input type="password" placeholder="Пароль">
+                <button class="btn" type="submit" name="login-btn">
+                  Войти
+                </button>
+                <div>
+                  <a href="#" class="gray-link">Забыли пароль?</a><br>
+                  <a href="#" class="gray-link">Новая регистрация</a>
+                </div>
+              </form>
             </li>
             <li>
               <a class="cart-link" href="#">Пусто</a>
+              <div class="product-list">
+                  <div class="product-row">
+                    <img class="product" src="img/ice-cream1.png" alt="Апельсиновый">
+                    <span class="product product-name">Пломбир с апельсиновым джемом</span>
+                    <span class="product product-weight">1.5 кг x</span>
+                    <span class="product product-price gray">200 руб.</span>
+                    <span class="product product-sum">300 руб.</span>
+                  </div>
+                  <div class="product-row">
+                    <img class="product" src="img/ice-cream2.png" alt="Клубничный">
+                    <span class="product product-name">Клубничный пломбир с присыпкой
+из белого шоколада</span>
+                    <span class="product product-weight">1.5 кг x</span>
+                    <span class="product product-price gray">300 руб.</span>
+                    <span class="product product-sum">450 руб.</span>
+                  </div>
+                  <span class="total-price float-right">Итого: 750 руб.</span>
+                  <a href="#" class="btn float-right">Оформить заказ</a>
+              </div>
             </li>
           </ul>
         </nav>
